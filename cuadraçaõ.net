@@ -1,0 +1,15 @@
+* Z:\home\vero\Documentos\ADC\tp\cuadraçaõ.asc
+C1 N002 N001 10n
+C2 N004 N002 10n
+R1 N003 N002 37k4
+R2 0 N004 75k
+XU1 N004 N003 VCC VEE N003 TL081
+V2 VCC 0 10
+V3 0 VEE 10
+V N001 0 PULSE(0 1 {Ton} 1u 1u {Ton} {Tperiod} 2000) AC 1
+.lib TL081.301
+* TP Poshito Veru
+.tran 0 {10*Tperiod}
+.param fo=3000 Tperiod={1/fo} Ton={Tperiod/2}
+.backanno
+.end
