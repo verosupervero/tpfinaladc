@@ -9,3 +9,5 @@
 
  text(real(p) - 0.02* real(p), imag(p),num2str(p))
  text(-100, 0,"0+0i")
+ print -dsvg polos_y_ceros_transferencia_original.svg
+ print -dpng polos_y_ceros_transferencia_original.png
